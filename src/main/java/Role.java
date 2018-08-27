@@ -1,0 +1,13 @@
+public enum Role {
+
+    PILOT,
+    CO_PILOT,
+    NAVIGATOR,
+    BOMBARDIER,
+    TOP_GUNNER,
+    RADIO_OPERATOR,
+    BALL_TURRET_GUNNER,
+    RIGHT_WAIST_GUNNER,
+    LEFT_WAIST_GUNNER,
+    TAIL_GUNNER,
+}
