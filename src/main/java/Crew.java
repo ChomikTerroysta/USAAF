@@ -1,4 +1,8 @@
+import java.util.Random;
+
 public class Crew extends Person {
+
+
 
     private Enum role;
 
@@ -22,4 +26,7 @@ public class Crew extends Person {
                 "role=" + role +
                 '}';
     }
+
+
+
 }

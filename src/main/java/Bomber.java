@@ -1,6 +1,8 @@
 public class Bomber   {
 
 
+
+
     private TypeOfPlanes typeOfPlanes;
     private String markOfPlane;
     private String nameOfPlane;
@@ -13,6 +15,7 @@ public class Bomber   {
         this.nameOfPlane = nameOfPlane;
         this.damange = damange;
         this.nrOfMissionPlaneFlown = nrOfMissionPlaneFlown;
+        this.typeOfPlanes = typeOfPlanes;
     }
 
     public TypeOfPlanes getTypeOfPlanes() {
@@ -62,7 +65,7 @@ public class Bomber   {
                 ", markOfPlane='" + markOfPlane + '\'' +
                 ", nameOfPlane='" + nameOfPlane + '\'' +
                 ", damange=" + damange +
-                ", nrOfMissionPlaneFlown=" + nrOfMissionPlaneFlown +
+                ", nrOfMissionPlaneFlown=" + nrOfMissionPlaneFlown + "\n" +
                 '}';
     }
 }

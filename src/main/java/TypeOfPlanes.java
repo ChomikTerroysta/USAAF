@@ -1,4 +1,5 @@
+
 public enum TypeOfPlanes {
 
-    BOMBER
+    BOMBER, FIGHTER,
 }

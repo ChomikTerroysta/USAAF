@@ -1,6 +1,8 @@
+import java.util.Random;
+
 public  class Person {
 
-    private String name;
+    private String name = randomName();
     private String lastName;
     private int nrOfCOmbatMission;
     private int fatigue;
@@ -46,11 +48,24 @@ public  class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
+        return "Person " +
+                "name='" + name  +
                 ", lastName='" + lastName + '\'' +
                 ", nrOfCOmbatMission=" + nrOfCOmbatMission +
-                ", fatigue=" + fatigue +
-                '}';
+                ", fatigue=" + fatigue + "\n";
+    }
+
+    public static String randomName(){
+        String[] str = {"Marcin", "Jakub","Mikołaj", "Piotr", "Jan", "Marta", "Katarzyna", "Joanna", "Marzena", "Elżbieta"};
+        Random rand = new Random();
+        int x = rand.nextInt(str.length -1);
+        return str[x];
+    }
+
+    public static String randomLastName(){
+        String[] str = {"Ciesielski", "Tokarski","Stolarski", "Spawarski", "Rura", "Browarski", "Tagalski", "Nonalski", "Yosarian", "Wroński"};
+        Random rand = new Random();
+        int x = rand.nextInt(str.length -1);
+        return str[x];
     }
 }
